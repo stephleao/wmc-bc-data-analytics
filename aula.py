@@ -6,6 +6,9 @@ print("Olá!")
 nome = input("Qual é o seu nome? ") # Este é um comentário inline
 print("Seja bem-vinda ao curso de Python,", nome)
 
+# Vou quebrar a execução:
+  print("Este é um erro!") # Erro de identação
+
 '''
 Este é um comentário
 de múltiplas linhas :)

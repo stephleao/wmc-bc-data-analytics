@@ -1,7 +1,14 @@
+# Mensagem de abertura
 print("Olá!")
 
-nome = input("Qual é o seu nome? ")
+# Captura do nome do usuário
+# Exibição do nome
+nome = input("Qual é o seu nome? ") # Este é um comentário inline
 print("Seja bem-vinda ao curso de Python,", nome)
 
+'''
+Este é um comentário
+de múltiplas linhas :)
+'''
 idade = input("Qual é a sua idade? ")
 print("Você tem", idade, "anos")

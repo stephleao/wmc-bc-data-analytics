@@ -1,37 +1,16 @@
-# Mensagem de abertura
-print("Olá!")
+# Números inteiros
+escola = 12
+aulas = 35
+alunos = 23
 
-# Captura do nome do usuário
-# Exibição do nome
-nome = input("Qual é o seu nome? ") # Este é um comentário inline
-print("Seja bem-vinda ao curso de Python,", nome)
+print("Código da escola:", escola, " Aulas realizadas:", aulas, " Alunos: ", alunos)
 
-# Vou quebrar a execução:
-#  print("Este é um erro!") # Erro de identação
+# Este não é um inteiro
+preco = 2.50
 
-'''
-Este é um comentário
-de múltiplas linhas :)
-'''
-idade = input("Qual é a sua idade? ")
-print("Você tem", idade, "anos")
+print("Valor por minuto:", int(preco))
 
-# Variáveis
+# Isso aqui dá erro se inserir números decimais
+preco_promo = int(input("Valor promocional: "))
 
-# Reatribução de valores
-nome = "Fulana"
-idade = 65
-
-'''
-Nomes de variáveis "proibidos":
-1iniciandocomnumero
-kebab-case
-class
-'''
-
-print("Nome:", nome, "Idade:", idade)
-
-# Atribuição múltipla
-
-a = b = c = 10
-print(a,b,c)
+print("Valor promocional por minuto:", int(preco_promo))

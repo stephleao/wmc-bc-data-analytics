@@ -10,7 +10,7 @@ preco = 2.50
 
 print("Valor por minuto:", int(preco))
 
-# Isso aqui dá erro se inserir números decimais
-preco_promo = int(input("Valor promocional: "))
+# Isso daria erro se inserisse números decimais sem converter antes para float
+preco_promo = int(float(input("Valor promocional: ")))
 
 print("Valor promocional por minuto:", int(preco_promo))

@@ -24,3 +24,13 @@ print("A diferente de B:", valorA != valorB)
 # Calcula e compara
 resultado = valorA + valorB > 2
 print(resultado)
+
+# Precedência
+
+# Priorizará a multiplicação
+resultado = valorA + valorB * 2
+print(resultado)
+
+# Priorizará a soma
+resultado = (valorA + valorB) * 2
+print(resultado)

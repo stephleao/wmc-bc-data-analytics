@@ -1,23 +1,26 @@
-# Operações Especiais
+# Operadores relacionais e precedência
+# Retornam booleano - true/false
 
 """
 Exemplos de operadores:
-+= Implemento
--= Decremento
+> maior que
+< menor que
+>= maior ou igual
+<= menor ou igual
+== igual a
+!= diferente de
 """
 
 valorA = int(input("Qual o valor A? "))
 valorB = int(input("Qual o valor B? "))
 
-# Pega o valor inserido, calcula com o valor e armazena de novo
-valorA += 5 # equivale a valorA = valorA + 5
-valorB -= 2 # equivale a valorB = valorB - 2
+print("A maior que B:", valorA > valorB)
+print("A menor que B:", valorA < valorB)
+print("A maior ou igual B:", valorA >= valorB)
+print("A menor ou igual B:", valorA <= valorB)
+print("A igual a B:", valorA == valorB)
+print("A diferente de B:", valorA != valorB)
 
-print("Resultado de A:", valorA)
-print("Resultado de B:", valorB)
-
-# Uso do resto
-if valorA % 2 == 0:
-  print("A é par")
-else:
-  print("A é ímpar")
+# Calcula e compara
+resultado = valorA + valorB > 2
+print(resultado)

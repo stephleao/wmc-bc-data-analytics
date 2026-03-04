@@ -1,32 +1,17 @@
-# Operações Matemáticas
+# Operações Especiais
 
 """
 Exemplos de operadores:
-+ soma
-- subtração
-* multiplicação
-/ divisão - vai retornar decimal
-/ divisão inteira - vai retornar inteiro
-% resto da divisão
-** potenciação
++= Implemento
+-= Decremento
 """
 
 valorA = int(input("Qual o valor A? "))
 valorB = int(input("Qual o valor B? "))
 
-# Armazenando os resultados dos cálculos
-result_soma = valorA + valorB
-result_subtr = valorA - valorB
-result_mult = valorA * valorB
-result_div = valorA / valorB
-result_div_int = valorA // valorB
-result_resto = valorA % valorB
-result_pot = valorA ** valorB
+# Pega o valor inserido, calcula com o valor e armazena de novo
+valorA += 5 # equivale a valorA = valorA + 5
+valorB -= 2 # equivale a valorB = valorB - 2
 
-print("soma:", result_soma)
-print("subtração:", result_subtr)
-print("multiplicação:", result_mult)
-print("divisão:", result_div)
-print("divisão inteira:", result_div_int)
-print("resto da divisão:", result_resto)
-print("potenciação:", result_pot)
+print("Resultado de A:", valorA)
+print("Resultado de B:", valorB)

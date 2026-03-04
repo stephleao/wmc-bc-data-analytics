@@ -1,16 +1,12 @@
-# Números inteiros
-escola = 12
-aulas = 35
-alunos = 23
-
-print("Código da escola:", escola, " Aulas realizadas:", aulas, " Alunos: ", alunos)
-
-# Este não é um inteiro
+# Números decimais - Float
 preco = 2.50
+temperatura = -3.14
+media_notas = 7.5
 
-print("Valor por minuto:", int(preco))
+# Aqui vai sobrescrever `preco` com a string que o usuário inserir
+preco = input("Valor por minuto: ")
 
-# Isso daria erro se inserisse números decimais sem converter antes para float
-preco_promo = int(float(input("Valor promocional: ")))
+preco_promo = float(input("Valor promocional: "))
 
-print("Valor promocional por minuto:", int(preco_promo))
+# Como `preco_promo` está como string, esse cálculo dá erro
+print("Diferença de preço:", preco - preco_promo)

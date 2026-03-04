@@ -11,13 +11,22 @@ Exemplos de operadores:
 ** potenciação
 """
 
-valorA = 15
-valorB = 4
+valorA = int(input("Qual o valor A? "))
+valorB = int(input("Qual o valor B? "))
 
-print("soma:", valorA + valorB)
-print("subtração:", valorA - valorB)
-print("multiplicação:", valorA * valorB)
-print("divisão:", valorA / valorB)
-print("divisão inteira:", valorA // valorB)
-print("resto da divisão:", valorA % valorB)
-print("potenciação:", valorA ** valorB)
+# Armazenando os resultados dos cálculos
+result_soma = valorA + valorB
+result_subtr = valorA - valorB
+result_mult = valorA * valorB
+result_div = valorA / valorB
+result_div_int = valorA // valorB
+result_resto = valorA % valorB
+result_pot = valorA ** valorB
+
+print("soma:", result_soma)
+print("subtração:", result_subtr)
+print("multiplicação:", result_mult)
+print("divisão:", result_div)
+print("divisão inteira:", result_div_int)
+print("resto da divisão:", result_resto)
+print("potenciação:", result_pot)

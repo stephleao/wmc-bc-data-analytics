@@ -15,3 +15,9 @@ valorB -= 2 # equivale a valorB = valorB - 2
 
 print("Resultado de A:", valorA)
 print("Resultado de B:", valorB)
+
+# Uso do resto
+if valorA % 2 == 0:
+  print("A é par")
+else:
+  print("A é ímpar")

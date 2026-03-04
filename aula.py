@@ -1,13 +1,11 @@
-# Números decimais - Float
-preco = 2.50
-temperatura = -3.14
-media_notas = 7.5
+# Trabalhando com textos - String
 
-# Aqui vai sobrescrever `preco` com a string que o usuário inserir
-preco = input("Valor por minuto: ")
+nome = "Stephanne"
 
-preco_promo = float(input("Valor promocional: "))
+print(nome)
 
-# `float()` também pode ser usado diretamente aqui na variável a ser convertida
-# O número pode retornar com muitas casas decimais, por isso `round()`
-print("Diferença de preço:", round(float(preco) - preco_promo, 2))
+# Slicing
+# Pega apenas o caractere da posição 1, que é o ´t´
+print(nome[1])
+# Pega caracteres a partir da posição 0 até antes da posição 5, ou seja 4
+print(nome[0:5])

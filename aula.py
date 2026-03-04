@@ -8,5 +8,6 @@ preco = input("Valor por minuto: ")
 
 preco_promo = float(input("Valor promocional: "))
 
-# Como `preco_promo` está como string, esse cálculo dá erro
-print("Diferença de preço:", preco - preco_promo)
+# `float()` também pode ser usado diretamente aqui na variável a ser convertida
+# O número pode retornar com muitas casas decimais, por isso `round()`
+print("Diferença de preço:", round(float(preco) - preco_promo, 2))

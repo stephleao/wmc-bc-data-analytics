@@ -1,27 +1,17 @@
-# Laços de Repetição com FOR
+# Laços de Repetição com WHILE
+# Usado quando não sabemos quantas vezes vai repetir
+# Enquanto a condição for verdadeira - Cuidado com o looping infinito!
 
-# Lista
-tecnologias = ["Python", "Dados", "IA"]
+# Incremento
+contador = 0
 
-# Percorre cada item da lista imprimindo a informação armazenada
-# range(len()) faz a mesma coisa do outro exemplo, mas o foco é na posição,
-# então será útil para manipula-lo - modificar seu valor, comparar valores
-# len() retorna o tamanho da lista e o range() cria a sequência numérica
-for item in range(len(tecnologias)):
-  # `item` aqui retorna a posição, não o valor
-  print(tecnologias[item])
+while contador < 3:
+  contador += 1
+  print("Oi!")
 
-# Isso é um Dicionário - semelhante a um array com chave/valor ou objeto
-perfil = { "nome": "Ana", "estado": "RS"}
+# Decremento
+tentativas = 3
 
-# Percorre cada chave imprimindo o rótulo da chave e seu valor atribuído
-for chave in perfil:
-  print(chave, perfil[chave])
-
-# Outro exemplo
-indice = 0
-
-# Vai somar o valor do indice e do item e armazenar, em cada iteração
-for item in range(3):
-  indice += item
-  print("Número atual:", indice)
+while tentativas >= 0:
+  print("Você tem", tentativas, "tentativas")
+  tentativas -= 1

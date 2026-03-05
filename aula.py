@@ -1,9 +1,7 @@
 # Laços de Repetição com FOR
 
-n = 4 # parada da contagem
+nome = "Ana"
 
-# i é a variavel contadora
-# range() = alcance ou intervalo, vai do 0 até n (não incluso - como no slicing
-# de string)
-for i in range(0, n):
-  print(i)
+# Percorre toda a string, como se fosse uma lista
+for letra in nome:
+  print(letra)

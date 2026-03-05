@@ -1,16 +1,9 @@
-# Fazendo o código tomar decisões
-# Condições com if, else, elif
+# Laços de Repetição com FOR
 
-nota1 = 7
-nota2 = 8
-nota3 = 5
+n = 4 # parada da contagem
 
-# a divisão retorna float, arrendondamos para 2 casas
-media = round((nota1 + nota2 + nota3) / 3, 2)
-
-if media >= 7:
-  print("Aprovada - Média: ", media)
-elif media >= 5:
-  print("Recuperação - Média: ", media)
-else:
-  print("Reprovada - Média: ", media)
+# i é a variavel contadora
+# range() = alcance ou intervalo, vai do 0 até n (não incluso - como no slicing
+# de string)
+for i in range(0, n):
+  print(i)

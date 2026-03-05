@@ -1,7 +1,8 @@
 # Laços de Repetição com FOR
 
-nome = "Ana"
+# Lista
+tecnologias = ["Python", "Dados", "IA"]
 
-# Percorre toda a string, como se fosse uma lista
-for letra in nome:
-  print(letra)
+# Percorre cada item da lista imprimindo a informação armazenada
+for item in tecnologias:
+  print(item)

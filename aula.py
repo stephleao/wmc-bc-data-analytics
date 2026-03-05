@@ -17,3 +17,11 @@ perfil = { "nome": "Ana", "estado": "RS"}
 # Percorre cada chave imprimindo o rótulo da chave e seu valor atribuído
 for chave in perfil:
   print(chave, perfil[chave])
+
+# Outro exemplo
+indice = 0
+
+# Vai somar o valor do indice e do item e armazenar, em cada iteração
+for item in range(3):
+  indice += item
+  print("Número atual:", indice)

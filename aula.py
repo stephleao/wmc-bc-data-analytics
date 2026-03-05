@@ -10,3 +10,10 @@ tecnologias = ["Python", "Dados", "IA"]
 for item in range(len(tecnologias)):
   # `item` aqui retorna a posição, não o valor
   print(tecnologias[item])
+
+# Isso é um Dicionário - semelhante a um array com chave/valor ou objeto
+perfil = { "nome": "Ana", "estado": "RS"}
+
+# Percorre cada chave imprimindo o rótulo da chave e seu valor atribuído
+for chave in perfil:
+  print(chave, perfil[chave])

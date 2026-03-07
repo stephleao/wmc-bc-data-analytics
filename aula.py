@@ -25,15 +25,9 @@ escola = [ # lista de alunas (dicionários) de uma escola
   }
 ]
 
-print(escola) # imprime toda a lista
+# Unindo mais conceitos
 
 for aluna in escola:
-  # Forma mais prática e direta de imprimir os valores, dentro da própria string
-  print(f"Nome: {aluna['nome']}") # `f` = formatado
-  print(f"Curso: {aluna['curso']}")
-  print("-" * 20)
-
-# Criando uma variável e atribuindo um dicionário da lista
-aluna = escola[2]
-
-print(aluna)
+  if aluna["nome"] == "Cynthia": # checagem
+    print(f"Nome: {aluna['nome']}")
+    print(f"Curso: {aluna['curso']}")

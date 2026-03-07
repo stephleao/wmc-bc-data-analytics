@@ -2,20 +2,30 @@
 # Armazena dados de uma única coisa
 # Semelhante a um objeto ou array associativo
 
-aluna = {
-  "nome": "Ana",
-  "idade": 45,
-  "curso": "Python",
-  "status": True
-}
+# É possível misturar listas e dicionários
 
-print(aluna)
-print(aluna["nome"])
+escola = [ # lista de alunas (dicionários) de uma escola
+  {
+    "nome": "Ana",
+    "idade": 45,
+    "curso": "Python",
+    "status": True
+  },
+  {
+    "nome": "Cynthia",
+    "idade": 34,
+    "curso": "C#",
+    "status": True
+  },
+  {
+    "nome": "Clarice",
+    "idade": 23,
+    "curso": "Dados",
+    "status": False
+  }
+]
 
-aluna["idade"] = 54 # Altera o valor de idade
-aluna["cidade"] = "São Paulo" # Adiciona um novo conjunto de chave+valor
+print(escola) # imprime toda a lista
 
-print(aluna)
-
-aluna.pop("idade") # Remove um conjunto de chave+valor
-print(aluna)
+for aluna in escola:
+  print(aluna) # imprime individualmente cada item da lista

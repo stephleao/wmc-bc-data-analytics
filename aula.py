@@ -1,31 +1,21 @@
-# Trabalhando com funções
-# Um bloco de código que executa uma tarefa
-# Reaproveita código
-# É como uma receita
-# Boa função faz uma ação só, deve ter nome claro
+# Criando arquivos
 
-# def vem de 'define function' ou só 'defina'
-# Passando um parâmetro, que é como uma variável que guardará um valor ao usar
-# a função
-def saudacao(nome, estado): # permite vários parâmetros
-  print(f"Seja bem-vinda, {nome}. Muito bom ver alguém de {estado}.")
+arquivo = "alunas.txt"
 
-# Dará erro se não passar o valor do parâmetro que a função espera
-saudacao("Steph", "RJ")
+# Cria/abre um arquivo para escrita em UTF-8, e garante que ele seja fechado
+# corretamente
+with open(arquivo, mode="w", encoding="utf-8") as lista:
+  # `with ... as ...` : gerenciador de contexto -> dá mais segurança e controle
+  # `with ...` : garante que o arquivo será automaticamente fechado ao final do
+  # bloco identado, mesmo que ocorra erro no bloco -> boa prática
+  # `open()` : abre um objeto de arquivo
+  # `mode="w"` : "write", escrita. Se existir, será sobrescrito; senão, criado
+  # `encoding="utf-8"` : trata corremente caracteres especiais
+  # `as` : associa a uma variável
+  # `lista` : variável que representa o objeto do arquivo e poderá manipulá-lo
+  # com os métodos
 
-# Exemplo de função para cálculo
-def soma(a, b):
-  # Devolvendo um valor (que poderá ser usado em outras partes do código)
-  return a + b
-
-resultado = soma(5, 3)
-print(resultado)
-
-# Exemplo com checagem
-def verificar_idade(idade):
-  if idade >= 18:
-    return "Maior de idade" # vai parar a execução aqui e retornar o valor se for verdadeiro
-  else: # esse else poderia ser descartado e o return fora do if
-    return "Menor de idade"
-
-print(verificar_idade(38))
+  # write() é o método de escrita
+  lista.write("Ana\n")
+  lista.write("Beatriz\n")
+  lista.write("Gisele\n")

@@ -1,15 +1,21 @@
-# Tuplas
-# Explicitam que um conjunto de dados não pode mudar
-# São como listas de constantes
+# Dicionários
+# Armazena dados de uma única coisa
+# Semelhante a um objeto ou array associativo
 
-dias_semana = ("segunda", "terça", "quarta", "quinta", "sexta")
+aluna = {
+  "nome": "Ana",
+  "idade": 45,
+  "curso": "Python",
+  "status": True
+}
 
-print(dias_semana)
-print(dias_semana[0])
-print(dias_semana[4])
+print(aluna)
+print(aluna["nome"])
 
-# Isso aqui gera erro
-dias_semana[0] = "domingo"
+aluna["idade"] = 54 # Altera o valor de idade
+aluna["cidade"] = "São Paulo" # Adiciona um novo conjunto de chave+valor
 
-# Armazena números também
-coordenadas = (10, 20)
+print(aluna)
+
+aluna.pop("idade") # Remove um conjunto de chave+valor
+print(aluna)

@@ -1,20 +1,15 @@
-# Listas
+# Tuplas
+# Explicitam que um conjunto de dados não pode mudar
+# São como listas de constantes
 
-cursos = ["Python", "Git", "Design", "CV"]
+dias_semana = ("segunda", "terça", "quarta", "quinta", "sexta")
 
-# Impremindo a lista e a posição 1
-print(cursos)
-print(cursos[1])
+print(dias_semana)
+print(dias_semana[0])
+print(dias_semana[4])
 
-# Altera o valor da posição 1
-cursos[1] = "Git e Github"
-print(cursos)
+# Isso aqui gera erro
+dias_semana[0] = "domingo"
 
-# Adiciona um novo item na lista
-cursos.append("Dados")
-print(cursos)
-
-# Remove um item da lista
-cursos.remove("Design") # pelo valor
-cursos.pop(0) # pela posição
-print(cursos)
+# Armazena números também
+coordenadas = (10, 20)

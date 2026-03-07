@@ -1,17 +1,20 @@
-# Laços de Repetição com WHILE
-# Usado quando não sabemos quantas vezes vai repetir
-# Enquanto a condição for verdadeira - Cuidado com o looping infinito!
+# Listas
 
-# Incremento
-contador = 0
+cursos = ["Python", "Git", "Design", "CV"]
 
-while contador < 3:
-  contador += 1
-  print("Oi!")
+# Impremindo a lista e a posição 1
+print(cursos)
+print(cursos[1])
 
-# Decremento
-tentativas = 3
+# Altera o valor da posição 1
+cursos[1] = "Git e Github"
+print(cursos)
 
-while tentativas >= 0:
-  print("Você tem", tentativas, "tentativas")
-  tentativas -= 1
+# Adiciona um novo item na lista
+cursos.append("Dados")
+print(cursos)
+
+# Remove um item da lista
+cursos.remove("Design") # pelo valor
+cursos.pop(0) # pela posição
+print(cursos)

@@ -28,4 +28,7 @@ escola = [ # lista de alunas (dicionários) de uma escola
 print(escola) # imprime toda a lista
 
 for aluna in escola:
-  print(aluna) # imprime individualmente cada item da lista
+  # Forma mais prática e direta de imprimir os valores, dentro da própria string
+  print(f"Nome: {aluna['nome']}") # `f` = formatado
+  print(f"Curso: {aluna['curso']}")
+  print("-" * 20)

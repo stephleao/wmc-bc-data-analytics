@@ -2,6 +2,7 @@
 # Um bloco de código que executa uma tarefa
 # Reaproveita código
 # É como uma receita
+# Boa função faz uma ação só, deve ter nome claro
 
 # def vem de 'define function' ou só 'defina'
 # Passando um parâmetro, que é como uma variável que guardará um valor ao usar
@@ -19,3 +20,12 @@ def soma(a, b):
 
 resultado = soma(5, 3)
 print(resultado)
+
+# Exemplo com checagem
+def verificar_idade(idade):
+  if idade >= 18:
+    return "Maior de idade" # vai parar a execução aqui e retornar o valor se for verdadeiro
+  else: # esse else poderia ser descartado e o return fora do if
+    return "Menor de idade"
+
+print(verificar_idade(38))

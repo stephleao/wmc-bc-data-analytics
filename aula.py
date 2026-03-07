@@ -4,7 +4,10 @@
 # É como uma receita
 
 # def vem de 'define function' ou só 'defina'
-def saudacao():
-  print("Seja bem-vinda")
+# Passando um parâmetro, que é como uma variável que guardará um valor ao usar
+# a função
+def saudacao(nome):
+  print(f"Seja bem-vinda, {nome}")
 
-saudacao()
+# Dará erro se não passar o valor do parâmetro que a função espera
+saudacao("Steph")

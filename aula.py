@@ -32,3 +32,8 @@ for aluna in escola:
   print(f"Nome: {aluna['nome']}") # `f` = formatado
   print(f"Curso: {aluna['curso']}")
   print("-" * 20)
+
+# Criando uma variável e atribuindo um dicionário da lista
+aluna = escola[2]
+
+print(aluna)

@@ -1,6 +1,7 @@
 # Acessando e Lendo Arquivos
 
 arquivo = "alunas.txt"
+alunas = []
 
 # Acessa o arquivo para leitura em UTF-8, e garante que ele seja fechado
 # corretamente
@@ -15,8 +16,10 @@ with open(arquivo, mode="r", encoding="utf-8") as lista:
   # `lista` : variável que representa o objeto do arquivo e poderá manipulá-lo
   # com os métodos
 
-  linhas = lista.readlines()
+  # Percorre cada linha do arquivo
+  for linha in lista.readlines():
+    # Adiciona na lista alunas a linha limpa
+    alunas.append(linha.strip())
 
-print(linhas)
-
-# O resultado retorna uma lista, porém "suja"
+# Retorna o conteúdo formatado perfeitamente como lista
+print(alunas)

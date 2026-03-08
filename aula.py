@@ -15,10 +15,8 @@ with open(arquivo, mode="r", encoding="utf-8") as lista:
   # `lista` : variável que representa o objeto do arquivo e poderá manipulá-lo
   # com os métodos
 
-  # percorre cada linha do arquivo e imprime
-  for linha in lista:
-    # strip() vai limpar a linha vazia do arquivo
-    print(linha.strip())
+  linhas = lista.readlines()
 
-  # resultado é o mesmo do exemplo anterior, com a diferença que lá todo o
-  # conteúdo do arquivo estava sendo impresso de uma vez, sem tratamento.
+print(linhas)
+
+# O resultado retorna uma lista, porém "suja"

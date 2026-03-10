@@ -1,4 +1,5 @@
-# Acessando e Lendo Arquivos
+# Atualizando Arquivos
+# Precimos ler o arquivo para então escrever
 
 arquivo = "alunas.txt"
 alunas = []
@@ -15,11 +16,22 @@ with open(arquivo, mode="r", encoding="utf-8") as lista:
   # `as` : associa a uma variável
   # `lista` : variável que representa o objeto do arquivo e poderá manipulá-lo
   # com os métodos
+  alunas = lista.readlines() # Guarda cada linha na lista
 
-  # Percorre cada linha do arquivo
-  for linha in lista.readlines():
-    # Adiciona na lista alunas a linha limpa
-    alunas.append(linha.strip())
+alunas_atualizadas = [] # Lista que receberá os dados
 
-# Retorna o conteúdo formatado perfeitamente como lista
-print(alunas)
+# Percorre cada item da lista
+for aluna in alunas:
+  # Guarda o nome limpo
+  nome = aluna.strip()
+
+  # Checa o nome que queremos remover
+  if nome != "Gisele":
+    alunas_atualizadas.append(nome) # Guarda o nome na lista se for true
+
+# Precisamos escrever essa lista com os dados atualizados no arquivo
+with open(arquivo, mode="w", encoding="utf-8") as lista:
+  # Percorre cada item da lista atualizada
+  for aluna in alunas_atualizadas:
+    # Escreve no arquivo o dado
+    lista.write(aluna + "\n")

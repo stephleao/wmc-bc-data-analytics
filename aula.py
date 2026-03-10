@@ -1,19 +1,16 @@
 # Tratamento de Erros
 # Evita que o programa pare, trabalhando as excessões
+# Trate os erros específicos, use com mensagens claras
+# Evite usar excepts genéricos, pois mascaram a causa do erro
+# Evite colocar muito código dentro do try
 
 # try/except é como if/else: tente fazer, se der erro, faça tal coisa
-try:
-  # se digitar qualquer coisa além de número, dará erro
-  numero = int(input("Digite um número: "))
-  resultado = 10 / numero
+try: # tentando ler um arquivo
+  arquivo = open("dados.txt", mode="r")
+  conteudo = arquivo.read()
 
-# Checa se é uma divisão por zero
-except ZeroDivisionError:
-  print("Não é possível dividir por zero")
+except FileNotFoundError: # Se o arquivo não existir
+  print("Arquivo não encontrado")
 
-# Checa se o valor tem o tipo correto
-except ValueError:
-  print("Digite somente números inteiros")
-
-else:
-  print(f"Resultado: {round(resultado, 2)}")
+finally: # Será sempre executado com ou sem erro
+  print("Operação concluída")

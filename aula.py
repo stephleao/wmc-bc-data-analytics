@@ -35,3 +35,8 @@ with open(arquivo, mode="w", encoding="utf-8") as lista:
   for aluna in alunas_atualizadas:
     # Escreve no arquivo o dado
     lista.write(aluna + "\n")
+
+# Adicionando novo dado no arquivo
+with open(arquivo, mode="a", encoding="utf-8") as lista:
+  # `mode="a"` : "append", adicionar
+  lista.write("Daniela\n")

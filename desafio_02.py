@@ -45,11 +45,11 @@ def obter_media(lista):
 
 # Função que concatena os resultados das demais
 def obter_valores(lista):
-  max = obter_max(lista)
-  min = obter_min(lista)
+  maximo = obter_max(lista)
+  minimo = obter_min(lista)
   media = obter_media(lista)
 
-  return max, min, media
+  return maximo, minimo, media
 
 # Testando as funções
 

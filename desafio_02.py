@@ -8,8 +8,6 @@ Crie uma função que receba uma lista de números e retorne:
 - a média dos valores
 """
 
-lista_numeros = [345, 185, 46, 234]
-
 # Função que obtém o maior valor
 def obter_max(lista):
   # Variavel começa com o primeiro item da lista para comparar
@@ -45,12 +43,17 @@ def obter_media(lista):
   # divide a media pela quantidade da lista e retorna
   return media / len(lista)
 
-# Função que concatena os resultados das demais e exibe-os para o usuário
-def obter_valor(lista):
-  print('Lista:', lista)
-  print('Valor máximo:', obter_max(lista))
-  print('Valor mínimo:', obter_min(lista))
-  print('Média:', obter_media(lista))
+# Função que concatena os resultados das demais
+def obter_valores(lista):
+  max = obter_max(lista)
+  min = obter_min(lista)
+  media = obter_media(lista)
 
-# Executa a função concatenadora
-obter_valor(lista_numeros)
+  return max, min, media
+
+# Testando as funções
+
+lista_numeros = [345, 185, 46, 234]
+
+print('Lista:', lista_numeros)
+print('Máximo, mínimo e a média:', obter_valores(lista_numeros))

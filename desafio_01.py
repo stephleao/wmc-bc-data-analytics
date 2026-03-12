@@ -23,12 +23,10 @@ print(f'Títulos que possuem as palavras {palavras_chave}:\n')
 
 # Percorre a lista de títulos
 for titulo in titulos_palestras:
-  titulo = titulo.lower() # Converte o título em minúscula
-
   # Percorre a lista de palavras-chave
   for palavra in palavras_chave:
     # Verifica se a palavra está contida no título
-    if palavra in titulo:
+    if palavra in titulo.lower():
       contador += 1
       print(f"{contador}. {titulo}")
 

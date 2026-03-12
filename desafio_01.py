@@ -23,13 +23,14 @@ print(f'Títulos que possuem as palavras {palavras_chave}:\n')
 
 # Percorre a lista de títulos
 for titulo in titulos_palestras:
+  parada = False # variável que evitará contar repetidamente
+
   # Percorre a lista de palavras-chave
   for palavra in palavras_chave:
-    # Verifica se a palavra está contida no título
-    if palavra in titulo.lower():
+    # Verifica a parada e se a palavra está contida no título
+    if parada == False and palavra in titulo.lower():
       contador += 1
       print(f"{contador}. {titulo}")
-
-      break # Força parada para não fazer mais contagem no mesmo título
+      parada = True # vai parar a checagem
 
 print(f"\nTotal de títulos com as palavras-chave: {contador}")
